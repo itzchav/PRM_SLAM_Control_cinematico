@@ -1,0 +1,2 @@
+prm_slam
+-DCATKIN_DEVEL_PREFIX=/home/karla/prm_slam_ws/devel -DCMAKE_INSTALL_PREFIX=/home/karla/prm_slam_ws/install -G Unix Makefiles
