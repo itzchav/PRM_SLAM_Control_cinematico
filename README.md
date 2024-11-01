@@ -1,5 +1,5 @@
 # PRM_SLAM_Control_cinemático
-
+## Offline
 Gmapping:
 
 ```shell
