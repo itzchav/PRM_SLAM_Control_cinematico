@@ -25,8 +25,35 @@ rosrun map_server map_saver -f map
 
 Código para obtener del mapa como imagen binarizada:
 ```shell
-cd ~/catkin_ws
-source ./devel/setup.bash
+cd prm_slam_ws/codigos_offline 
 python3 rviz_binarizado.py
 ```
 
+Código para obtener la trayectoria con PRM:
+-Sin obtaculos
+```shell
+cd prm_slam_ws/codigos_offline 
+python3 Prm_code.py
+```
+
+-Con obstaculos
+```shell
+cd prm_slam_ws/codigos_offline 
+python3 Prm_code_obstaculos.py
+```
+
+Código para obtener del mapa como imagen binarizada:
+```shell
+cd ~/prm_slam_ws/
+source devel/setup.bash 
+rosrun prm_slam prm_slam_offline.py 
+```
+
+## Online
+
+Código para obtener del mapa como imagen binarizada:
+```shell
+cd ~/prm_slam_ws/
+source devel/setup.bash 
+rosrun prm_slam prm_slam_online.py
+```
