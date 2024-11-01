@@ -1,2 +1,32 @@
-# navegacion-autonoma-robot-movil
-Este proyecto propone la implementación del algoritmo de Mapeo y Localización Simultánea (SLAM) para generar un mapa del entorno en el que el robot operará. Posteriormente, se utilizará el Aprendizaje por Refuerzo (RL) como técnica de navegación autónoma, permitiendo al robot móvil navegar de manera efectiva en dicho entorno.
+# PRM_SLAM_Control_cinemático
+
+Gmapping:
+
+```shell
+cd ~/catkin_ws
+source ./devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_gazebo plano_completo_gmapping_noetic.launch 
+```
+Teleoperación del robot:
+```shell
+cd ~/catkin_ws
+source ./devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
+
+Comando para la obtención del mapa como imagen:
+```shell
+cd ~/catkin_ws
+source ./devel/setup.bash
+rosrun map_server map_saver -f map
+```
+
+Código para obtener del mapa como imagen binarizada:
+```shell
+cd ~/catkin_ws
+source ./devel/setup.bash
+python3 rviz_binarizado.py
+```
+
