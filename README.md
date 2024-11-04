@@ -1,5 +1,5 @@
 # PRM_SLAM_Control_cinemático
-## Offline
+## RUTA ESTÁTICA
 Gmapping:
 
 ```shell
@@ -49,7 +49,7 @@ source devel/setup.bash
 rosrun prm_slam prm_slam_offline.py 
 ```
 
-## Online
+## RUTA DINÁMICA
 
 Código para obtener del mapa como imagen binarizada:
 ```shell
