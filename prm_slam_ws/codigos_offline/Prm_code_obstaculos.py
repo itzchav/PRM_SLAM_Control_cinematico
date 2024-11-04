@@ -64,8 +64,18 @@ def dibujar_grafo(imagen_color, grafo, puntos):
 def prm( imagen, numero_de_muestras, distancia_max):
     path = None
 
+    #Prueba 1
+    punto_inicio = (692, 430)
+    punto_destino = (580,547)
+    #Prueba 2
+    punto_inicio = (527, 235)
+    punto_destino = (257,281)
+    #Prueba 3
     punto_inicio = (692, 430)
     punto_destino = (167, 430)
+    #Prueba 4
+    punto_inicio = (514,643)
+    punto_destino = (124, 370)
 
     points = []  # Lista para almacenar los puntos aleatorios
     img_color = cv2.cvtColor(imagen, cv2.COLOR_GRAY2BGR)
