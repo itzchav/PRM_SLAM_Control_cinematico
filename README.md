@@ -52,7 +52,7 @@ rosrun prm_slam prm_slam_offline.py
 ## Online
 
 
-Código para obtener del mapa como imagen binarizada:
+Código para ejecutar la navegación online:
 ```shell
 cd ~/prm_slam_ws/
 source devel/setup.bash 
