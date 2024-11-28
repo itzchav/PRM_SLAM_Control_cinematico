@@ -42,7 +42,7 @@ cd prm_slam_ws/codigos_offline
 python3 Prm_code_obstaculos.py
 ```
 
-Código para obtener del mapa como imagen binarizada:
+Código para recorrer la trayectoria:
 ```shell
 cd ~/prm_slam_ws/
 source devel/setup.bash 
